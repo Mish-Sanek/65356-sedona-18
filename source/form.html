@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Отзыв</title>
+</head>
+<body>
+  <!-- page header -->
+  <header class="page-header">
+      <nav class="page-header__nav">
+        <ul class="page-header__links">
+          <li class="page-header__item">
+            <a class="index.html" class="page-header__link">Главная</a>
+          </li>
+          <li class="page-header__item">
+            <a href="photo.html" class="page-header__link">Фото и видео</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link">Формы отзыва</a>
+          </li>
+          <li class="page-header__item">
+            <a href="https://up.htmlacademy.ru/" class="page-header__link">Html academy</a>
+          </li>
+        </ul>
+
+        <a href="page-header__logo">
+          <picture class="page-header__logo-picture">
+            <source>
+            <source>
+            <img src="https://via.placeholder.com/102x83" alt="">
+          </picture>
+        </a>
+
+        <button class="page-header__toggle"></button>
+      </nav>
+    </header>
+    <!-- page header end -->
+
+    <!-- intro -->
+    <div class="intro intro--small">
+      <div class="intro__bg">
+        <picture class="intro__bg__picture">
+          <source>
+            <img src="https://via.placeholder.com/229x39" alt="">
+        </picture>
+      </div>
+
+      <section class="intro__info">
+        <h1 class="intro__info__title">Оставьте свой отзыв</h1>
+        <p class="intro__info__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+    </div>
+    <!-- intro end -->
+
+    <!-- review -->
+    <form class="rewiew" action="https://echo.htmlacademy.ru" method="post">
+
+      <fieldset class="review__section">
+        <legend class="review__section-title">Представьтесь:</legend>
+        <label class="review__section-label" for="first-name">Имя:<sup>*</sup></label>
+        <input class="review__section-input" type="text" name="" required id="first-name" placeholder="Петр">
+        <label class="review__section-label" for="last-name">Фамилия:<sup>*</sup></label>
+        <input class="review__section-input" type="text" name="" required id="last-name" placeholder="Иванов">
+        <label class="review__section-label" for="patronymic">Отчество:</label>
+        <input class="review__section-input" type="text" name="" id="patronymic" placeholder="Александрович">
+      </fieldset>
+
+      <fieldset class="review__section">
+        <legend class="review__section-title">Контактная информация:</legend>
+        <label class="review__section-label" for="telephone">Контактный телефон:<sup>*</sup></label>
+        <input class="review__section-input" type="tel" name="" required id="telephone" placeholder="Введите телефон">
+        <label class="review__section-label" for="email">Электронная почта:<sup>*</sup></label>
+        <input class="review__section-input" type="email" name="" required id="email" placeholder="Введите e-mail">
+      </fieldset>
+
+      <fieldset class="review__section">
+        <legend class="review__section-title">Ваше общее впечатление:</legend>
+        <input class="review__section-input" type="radio" name="" id="positively" value="Скорее положительное">
+        <label class="review__section-label" for="positively">Скорее положительное</label>
+        <input class="review__section-input" type="radio" name="" id="negatively" value="Скорее отрицательное">
+        <label class="review__section-label" for="negatively">Скорее отрицательное</label>
+        <input class="review__section-input" type="radio" name="" id="hard-to-decide" value="Затрудняюсь ответить">
+        <label class="review__section-label" for="hard-to-decide">Затрудняюсь ответить</label>
+      </fieldset>
+
+      <fieldset class="review__section">
+        <legend class="review__section-title">Посещенные достопримечательности:</legend>
+        <input class="review__section-input" type="chackbox" name="" id="devils-bridge" value="Мост Дьявола">
+        <label class="review__section-label" for="devils-bridge">Мост Дьявола</label>
+        <input class="review__section-input" type="chackbox" name="" id="mountain-bell" value="Гора-Колокол">
+        <label class="review__section-label" for="mountain-bell">Гора-Колокол</label>
+        <input class="review__section-input" type="chackbox" name="" id="slide-park" value="Слайд-парк">
+        <label class="review__section-label" for="slide-park">Слайд-парк"</label>
+        <input class="review__section-input" type="chackbox" name="" id="red-rocks" value="Красные скалы">
+        <label class="review__section-label" for="red-rocks">Красные скалы</label>
+      </fieldset>
+
+      <fieldset class="review__section">
+        <legend class="review__section-title">Опишите свои эмоции:</legend>
+        <textarea class="review__section-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+
+      <button type="submit" class="review__submit">Отправить отзыв</button>
+
+    </form>
+    <!-- review end -->
+
+    <!-- page footer -->
+    <footer class="page-footer">
+      <a href="" class="page-footer__hashtag"></a>
+      <ul class="page-footer__socials">
+        <li class="page-footer__socials-item">
+          <a href="" class="page-footer__socials-link page-footer__socials-link--tw"></a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a href="" class="page-footer__socials-link page-footer__socials-link--fb"></a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a href="" class="page-footer__socials-link page-footer__socials-link--yt"></a>
+        </li>
+      </ul>
+      <a href="https://up.htmlacademy.ru/adaptive/18" class="page-footer__made">Разработано</a>
+    </footer>
+    <!-- page footer end -->
+
+    <!-- modal window -->
+    <div class="modal-window">
+
+      <!-- failure -->
+      <section class="modal-window__wrapper modal-window__failure">
+        <h2 class="visually-hidden">Неудалось отправить форму</h2>
+        <p class="modal-window__title">Что-то пошло не так!</p>
+        <p class="modal-window__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-window__button">Ок</button>
+      </section>
+      <!-- failure end -->
+
+      <!-- failure -->
+      <section class="modal-window__wrapper modal-window__wrapper--successfully">
+        <h2 class="visually-hidden">Форма успешно отправлена</h2>
+        <p class="modal-window__title">Ваш отзыв отправлен!</p>
+        <p class="modal-window__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal-window__button">Закрыть окно</button>
+      </section>
+      <!-- failure end -->
+
+    </div>
+    <!-- modal window end -->
+</body>
+</html>
