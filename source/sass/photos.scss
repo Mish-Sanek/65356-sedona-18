@@ -1,0 +1,63 @@
+.photos {
+  margin-top: 20px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  &__post {
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__post-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    text-transform: uppercase;
+  }
+
+  &__post-author {
+    margin-top: 6px;
+    margin-bottom: 0;
+
+    font-weight: 400;
+    font-size: inherit;
+    color: #333333;
+  }
+
+  &__post-author::before {
+    content: "Автор фото: ";
+  }
+
+  &__post-like {
+    padding: 0;
+    margin-top: 11px;
+
+    font-size: inherit;
+
+    background-color: transparent;
+    border: none;
+  }
+
+  &__post-like::before {
+    display: inline-block;
+    width: 23px;
+    height: 21px;
+    margin-top: -8px;
+    margin-right: 15px;
+
+    background-image: url("../img/icon-like.svg");
+    background-size: cover;
+
+    content: "";
+    vertical-align: middle;
+  }
+}

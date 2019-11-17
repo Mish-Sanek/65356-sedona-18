@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  src: local("Product Sans Regular"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  src: local("Product Sans Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import "variables.scss";
+@import "page-header.scss";
+@import "intro.scss";
+@import "reason.scss";
+@import "map-block.scss";
+@import "photos.scss";
+@import "video-block.scss";
+@import "review.scss";
+@import "modal-window.scss";
+@import "page-footer.scss";
+
+
+body {
+  max-width: 641px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "PT Sans";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}
