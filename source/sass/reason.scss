@@ -1,5 +1,9 @@
 .reason {
 
+  &:nth-of-type(3) {
+    margin-top: -5px;
+  }
+
   &__info {
     padding-top: 40px;
     padding-right: 20px;
@@ -95,7 +99,7 @@
     list-style: none;
   }
 
-  &__list-block {
+  &__list-item {
     position: relative;
 
     padding-top: 34px;
@@ -105,7 +109,7 @@
     list-style: none;
   }
 
-  &__list-block::before {
+  &__list-item::before {
     top: 23px;
     left: 0;
     position: absolute;
@@ -117,14 +121,15 @@
     content: "";
   }
 
-  &__list-block--home::before {
+  &__list-item--home::before {
     width: 39px;
     height: 37px;
 
     background-image: url("../img/icon-house.svg");
   }
 
-  &__list-block--gifts::before {
+  &__list-item--gifts::before {
+    top: 23px;
     left: 5px;
 
     width: 32px;
@@ -133,7 +138,9 @@
     background-image: url("../img/icon-gift.svg");
   }
 
-  &__list-block--food::before {
+  &__list-item--food::before {
+    top: 26px;
+
     width: 40px;
     height: 35px;
 
@@ -145,7 +152,8 @@
     font-size: 18px;
   }
 
-  &__list-item {
+  &__list-description {
+    display: block;
     margin-top: 15px;
 
     color: #333333;
