@@ -1,3 +1,11 @@
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
-  <path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon-video-replay</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-video-replay" fill="#5C6870" fill-rule="nonzero">
+            <path d="M8,4 L8,0 L3,5 L8,10 L8,6 C11.315,6 14,8.686 14,12 C14,15.314 11.315,18 8,18 C4.685,18 2,15.314 2,12 L0,12 C0,16.42 3.58,20 8,20 C12.42,20 16,16.42 16,12 C16,7.58 12.42,4 8,4 Z" id="Path"></path>
+        </g>
+    </g>
 </svg>

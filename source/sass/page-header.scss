@@ -1,0 +1,84 @@
+.page-header {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+
+  &__nav {
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background: #81b3d2;
+  }
+
+  &__links {
+    position: relative;
+
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    text-align: center;
+
+    list-style: none;
+  }
+
+  &__links::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 6px;
+
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+
+    content: "";
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid #678fa8;
+  }
+
+  &__item:not(:first-child) {
+    border-top: 1px solid #9ac2db;
+  }
+
+  &__link {
+    color: inherit;
+    line-height: 55px;
+    text-decoration: none;
+  }
+
+  &__logo-img {
+    position: absolute;
+    bottom: -27px;
+    left: calc(50% - 51px);
+    z-index: 1;
+
+    width: 102px;
+    height: 83px;
+  }
+
+  &__toggle {
+    width: 23px;
+    height: 21px;
+    float: right;
+    padding: 0;
+    margin-top: 17px;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    margin-left: auto;
+
+    background-image: url("../img/icon-menu.svg");
+    background-size: 100% 100%;
+    background-color: transparent;
+    border: none;
+  }
+}

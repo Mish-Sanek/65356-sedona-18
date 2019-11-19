@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>Отзыв</title>
 </head>
 <body>
@@ -24,15 +25,15 @@
             <a href="https://htmlacademy.ru/" class="page-header__link">Html academy</a>
           </li>
         </ul>
-
-        <a href="page-header__logo">
-          <picture>
-            <img class="page-header__logo-img" src="https://via.placeholder.com/102x83" alt="логотип Седоны">
-          </picture>
-        </a>
-
-        <button class="page-header__toggle"></button>
       </nav>
+
+      <a href="page-header__logo">
+        <picture>
+          <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="логотип Седоны">
+        </picture>
+      </a>
+
+      <button class="page-header__toggle"></button>
     </header>
     <!-- page header end -->
 
@@ -40,7 +41,7 @@
     <div class="intro intro--small">
       <div class="intro__bg">
         <picture class="intro__bg-picture">
-          <img src="https://via.placeholder.com/229x39" alt="добро пожаловать на сайт Седоны">
+          <img class="intro__bg-img" src="img/text-sedona.svg" alt="добро пожаловать на сайт Седоны">
         </picture>
       </div>
 
@@ -56,25 +57,35 @@
 
       <fieldset class="review__section">
         <legend class="review__section-title">Представьтесь:</legend>
-        <label class="review__section-label" for="first-name">Имя:<sup>*</sup></label>
-        <input class="review__section-input" type="text" name="" required id="first-name" placeholder="Петр">
-        <label class="review__section-label" for="last-name">Фамилия:<sup>*</sup></label>
-        <input class="review__section-input" type="text" name="" required id="last-name" placeholder="Иванов">
-        <label class="review__section-label" for="patronymic">Отчество:</label>
-        <input class="review__section-input" type="text" name="" id="patronymic" placeholder="Александрович">
+        <p class="review__section-row">
+          <label class="review__section-label" for="first-name">Имя<sup class="review__section-require">*</sup>:</label>
+          <input class="review__section-input" type="text" name="" required id="first-name" placeholder="Петр">
+        </p>
+        <p class="review__section-row">
+          <label class="review__section-label" for="last-name">Фамилия<sup class="review__section-require">*</sup>:</label>
+          <input class="review__section-input" type="text" name="" required id="last-name" placeholder="Иванов">
+        </p>
+        <p class="review__section-row">
+          <label class="review__section-label" for="patronymic">Отчество:</label>
+          <input class="review__section-input" type="text" name="" id="patronymic" placeholder="Александрович">
+        </p>
       </fieldset>
 
       <fieldset class="review__section">
         <legend class="review__section-title">Контактная информация:</legend>
-        <label class="review__section-label" for="telephone">Контактный телефон:<sup>*</sup></label>
-        <input class="review__section-input" type="tel" name="" required id="telephone" placeholder="Введите телефон">
-        <label class="review__section-label" for="email">Электронная почта:<sup>*</sup></label>
-        <input class="review__section-input" type="email" name="" required id="email" placeholder="Введите e-mail">
+        <p class="review__section-icon review__section-icon--tel">
+          <label class="review__section-label" for="telephone">Контактный телефон<sup class="review__section-require">*</sup>:</label>
+          <input class="review__section-input" type="tel" name="" required id="telephone" placeholder="Введите телефон">
+        </p>
+        <p class="review__section-icon review__section-icon--email">
+          <label class="review__section-label" for="email">Электронная почта<sup class="review__section-require">*</sup>:</label>
+          <input class="review__section-input" type="email" name="" required id="email" placeholder="Введите e-mail">
+        </p>
       </fieldset>
 
       <fieldset class="review__section">
         <legend class="review__section-title">Ваше общее впечатление:</legend>
-        <input class="review__section-input" type="radio" name="reaction" id="positively" value="Скорее положительное">
+        <input class="review__section-input" checked type="radio" name="reaction" id="positively" value="Скорее положительное">
         <label class="review__section-label" for="positively">Скорее положительное</label>
         <input class="review__section-input" type="radio" name="reaction" id="negatively" value="Скорее отрицательное">
         <label class="review__section-label" for="negatively">Скорее отрицательное</label>
@@ -84,11 +95,11 @@
 
       <fieldset class="review__section">
         <legend class="review__section-title">Посещенные достопримечательности:</legend>
-        <input class="review__section-input" type="checkbox" name="lions" id="devils-bridge" value="Мост Дьявола">
+        <input class="review__section-input" checked type="checkbox" name="lions" id="devils-bridge" value="Мост Дьявола">
         <label class="review__section-label" for="devils-bridge">Мост Дьявола</label>
-        <input class="review__section-input" type="checkbox" name="lions" id="mountain-bell" value="Гора-Колокол">
+        <input class="review__section-input" checked type="checkbox" name="lions" id="mountain-bell" value="Гора-Колокол">
         <label class="review__section-label" for="mountain-bell">Гора-Колокол</label>
-        <input class="review__section-input" type="checkbox" name="lions" id="slide-park" value="Слайд-парк">
+        <input class="review__section-input" checked type="checkbox" name="lions" id="slide-park" value="Слайд-парк">
         <label class="review__section-label" for="slide-park">Слайд-парк"</label>
         <input class="review__section-input" type="checkbox" name="lions" id="red-rocks" value="Красные скалы">
         <label class="review__section-label" for="red-rocks">Красные скалы</label>
@@ -126,7 +137,7 @@
     <div class="modal-window">
 
       <!-- failure -->
-      <section class="modal-window__wrapper modal-window__failure">
+      <section class="modal-window__wrapper modal-window__wrapper--failure">
         <h2 class="modal-window__title">Что-то пошло не так!</h2>
         <p class="modal-window__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal-window__button">Ок</button>

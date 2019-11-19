@@ -1,0 +1,115 @@
+.video-block {
+  margin-bottom: 50px;
+
+  &__info {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__description {
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    color: #333333;
+  }
+
+  &__video {
+    width: 100%;
+    height: auto;
+  }
+
+  &__controls {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -50px;
+  }
+
+  &__progress {
+    position: relative;
+
+    height: 45px;
+    padding-right: 22px;
+    padding-left: 22px;
+
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom-width: 20px;
+  }
+
+  &__progress-bar {
+    position: relative;
+    top: 22px;
+
+    height: 3px;
+
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  &__progress-btn {
+    position: absolute;
+    top: -3px;
+    left: 36px;
+
+    width: 9px;
+    height: 9px;
+    padding: 0;
+
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 66px;
+    padding-right: 23px;
+    padding-left: 25px;
+
+    background: #f2f2f2;
+  }
+
+  &__button {
+    padding: 0;
+
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+  }
+
+  &__button--repeat {
+    width: 16px;
+    height: 20px;
+    margin-right: auto;
+
+    background-image: url("../img/icon-video-replay.svg");
+  }
+
+  &__button--subtitles {
+    width: 32px;
+    height: 20px;
+    margin-right: 31px;
+
+    background-image: url("../img/icon-video-subtitles.svg");
+  }
+
+  &__button--resize {
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../img/icon-video-fullscreen.svg");
+  }
+}
